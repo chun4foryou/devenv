@@ -1,0 +1,14 @@
+version: '3.0'
+
+services:
+    dev:
+        stdin_open: true # docker run -i
+        tty: true        # docker run -t
+        image: dev:v1
+        build:
+            context: .
+        volumes:
+            - .:/home
+        hostname: dev
+        
+

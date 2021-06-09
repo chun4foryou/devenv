@@ -15,3 +15,6 @@ RUN git clone https://github.com/chun4foryou/devenv.git
 RUN cp ./devenv/.tmux.conf ./
 RUN cp ./devenv/.vimrc ./
 RUN cp ./devenv/.gitconfig ./
+
+WORKDIR /home
+
