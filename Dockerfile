@@ -7,6 +7,8 @@ RUN apt-get install -y tmux
 RUN apt-get install -y net-tools
 RUN apt-get install -y git
 RUN apt-get install -y tig
+RUN apt-get install -y gcc
+RUN apt-get install -y g++
 
 RUN git clone https://github.com/chun4foryou/devenv.git
 
