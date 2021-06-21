@@ -9,15 +9,15 @@ RUN apt-get install -y git
 RUN apt-get install -y tig
 RUN apt-get install -y gcc
 RUN apt-get install -y g++
-
+RUN apt-get install -y locales-all
 RUN git clone https://github.com/chun4foryou/devenv.git
 
 RUN cp ./devenv/.tmux.conf ./
 RUN cp ./devenv/.vimrc ./
 RUN cp ./devenv/.gitconfig ./
 
-RUN cp ./devenv/cmake_setup_input ./
-RUN apt-get install -y cmake < cmake_setup_input
+RUN export LC_ALL=ko_KR.utf8
+
 
 
 
